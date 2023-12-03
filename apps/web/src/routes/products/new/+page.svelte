@@ -7,7 +7,7 @@
         <form action="?/create" method="POST" class="flex flex-col space-y-2 w-full items-center" enctype="multipart/form-data">
             <h3 class="text-3xl font-bold">Tell me about your product</h3>
             <p class="mt-2 text-lg">We'll need the name, price, description, and an images. </p>
-            <Input id="name" label="Product name" />
+            <Input id="product" label="Product name" />
             <Input id="price" label="Product price" />
             <div class="form-control w-full max-w-lg">
                 <label for="description" class="label font-medium pb-1">
