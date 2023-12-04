@@ -1,11 +1,18 @@
-export const load = ({ locals }) => {
-	if (locals.user) {
+export const load = async ({ locals }) => {
+	if (locals.pb.authStore.isValid) {
+		const user = await locals.pb.collection('users').getOne(locals.pb.authStore.model.id);
+		if (!user.isAdmin) {
+			return {
+				isAdmin: false
+			};
+		} else {
+			return {
+				isAdmin: true
+			};
+		}
+	} else {
 		return {
-			user: locals.user
+			isAdmin: undefined
 		};
 	}
-
-	return {
-		user: undefined
-	};
 };

@@ -8,10 +8,10 @@
             <h3 class="text-3xl font-bold">Tell me about your product</h3>
             <p class="mt-2 text-lg">We'll need the name, price, description, and an images. </p>
             <Input id="product" label="Product name" />
-            <Input id="price" label="Product price" />
+            <Input id="price" label="Price" />
             <div class="form-control w-full max-w-lg">
                 <label for="description" class="label font-medium pb-1">
-                    <span class="label-text">Product description</span>
+                    <span class="label-text">Description</span>
                 </label>
                 <textarea name="description" class="textarea textarea-bordered h-24 resize-none" />
             </div>
