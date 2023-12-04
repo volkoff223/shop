@@ -52,6 +52,10 @@ import defaultAvatar from '$lib/assets/default-avatar.jpg'
             </div>
             {:else if (data.isAdmin === true)}
             <div class="dropdown dropdown-end">
+                <a href="/products/new" class="btn btn-primary">+ New Item</a>
+                <a href="/orders" class="btn btn-secondary">Orders</a>
+            </div>
+            <div class="dropdown dropdown-end">
                 <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
                 <!-- svelte-ignore a11y-label-has-associated-control -->
                 <label tabindex="0" class="btn btn-ghost btn-circle avatar">

@@ -5,7 +5,6 @@ export const load = async ({ locals }) => {
 		throw redirect(303, '/login');
 	} else {
 		const user = await locals.pb.collection('users').getOne(locals.pb.authStore.model.id);
-		console.log(user.isAdmin);
 		if (!user.isAdmin) {
 			throw error(401, { message: 'Unauthorized' });
 		}

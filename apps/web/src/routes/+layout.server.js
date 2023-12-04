@@ -6,6 +6,7 @@ export const load = async ({ locals }) => {
 				isAdmin: false
 			};
 		} else {
+			console.log(user.username);
 			return {
 				isAdmin: true
 			};
