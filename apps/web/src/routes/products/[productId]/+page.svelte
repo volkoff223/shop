@@ -15,6 +15,6 @@
     <p>{data.product.description}</p>
     <p>${data.product.price}</p>
     {#if (data.isAdmin)}
-    <button class="btn btn-primary">Edit</button>
+    <a href="/products/{data.product.id}/edit" class="btn btn-primary">Edit</a>
     {/if}
 </div>
