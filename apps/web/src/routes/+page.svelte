@@ -2,9 +2,8 @@
 	import hero from '$lib/assets/img/hero1.jpg';
 </script>
 
-<div class="hero min-h-screen" style="background-image: src={hero};">
-	<img src={hero} alt="" />
-	<div class="hero-overlay bg-opacity-80" />
+<div class="hero h-60">
+	<div class="hero-overlay bg-opacity-80 rounded-lg" />
 	<div class="hero-content text-center text-neutral-content">
 		<div class="max-w-md">
 			<h1 class="mb-5 text-5xl font-bold">Hello there</h1>
