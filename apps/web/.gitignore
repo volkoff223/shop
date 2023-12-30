@@ -8,3 +8,6 @@ node_modules
 !.env.example
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+apps/backend/pb_data
+
+apps/backend/pb_data/logs.db

@@ -1,5 +1,4 @@
 <script>
-	import hero from '$lib/assets/img/hero1.jpg';
 </script>
 
 <div class="hero h-60">
